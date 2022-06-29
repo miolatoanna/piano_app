@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(blue 20%,lightblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.panelBox {
+    background-color: #f71469;
+    height: 94px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    border-radius: 8px 8px 0 0;
+    background-image: url("images/panel-reflex.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.panelBox img {
+    width: 90px;
+}
+
+.panelBox p {
+    width: 150px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    opacity: 80%;
+}
+
+.keysBox {
+    height: 190px;
+    display: flex;
+}
+
+.key {
+    height: 180px;
+}
+
+.whiteKey {
+    height: 100%;
+    width: 90px;
+    background-color: white;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 6px solid #8c8c8c;
+    border-radius: 0 0 8px 8px;
+}
+
+.blackKey {
+    height: 70%;
+    width: 50px;
+    background: linear-gradient(grey 5%,black);
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 0 0 8px 8px;
+    margin-left: -25px;
+    margin-right: -25px;
+    z-index: 1;
+}
+
+
+.whiteKey:active {
+    background-color: #dddddd;
+}
+
+.blackKey:active {
+    background: black;
+}
